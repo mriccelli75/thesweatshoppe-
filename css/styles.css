@@ -1,0 +1,213 @@
+/*
+Table Of Contents
+
+# BRANDING
+  
+  dark: #302e3b
+  grey: #7e7c87
+  soft orange: #dfba73
+  teal: #c5dbe8
+  dark cyan: #479997 
+
+# TYPOGRAPHY
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
+
+
+/*
+* ==========================================================
+*     BRANDING 
+* ==========================================================
+*/
+:root {
+  /*colors*/
+  --ss-dark: #302e3b;
+  --ss-grey: #7e7c87;
+  --ss-teal: #c5dbe8;
+  --ss-grey: #434242;
+  --ss-darkcyan:#479997;
+  --ss-softorange: #dfba73;
+  --ss-salmon: #c98474;
+ 
+
+  /*typography*/
+  --ss-heading: font-family: 'Raleway', sans-serif;
+  --ss-body: font-family: 'Open Sans', sans-serif;
+  
+}
+
+/*
+*==========================================================
+*     TYPOGRAPHY 
+* ==========================================================
+*/
+
+html, body {
+  overflow-x: hidden;
+}
+body {
+  font-family: var(--ss-body);
+  background: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ss-heading);
+  font-weight: 700;
+  color: var(--ss-grey);
+  /* color: #0a145a; */
+}
+
+p {
+  color: var(--ss-grey);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+a:link, a:visited {
+  color: var(--ss-salmon);
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--sw-indigoblue);
+
+}
+
+
+
+/*
+* ==========================================================
+*     HEADER 
+* ==========================================================
+*/
+header nav a {
+  font-family: var( --ss-body);
+  font-weight: 600;
+  color: var(--ss-grey)!important;
+  transition: color .5s ease-in-out;
+  text-transform: uppercase;
+  font-size: .86rem;
+}
+
+header nav a:hover {
+  color: var(--ss-salmon)!important;
+}
+.ss-background {
+  background: #fff;
+}
+
+button.navbar-toggler {
+  border: none;
+  position: relative;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler span {
+   display: block;
+   background-color: var(--ss-teal)!important;
+   height: 3px;
+   width: 25px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   position: relative;
+   left: 0;
+   opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: transform .35s ease-in-out;
+   -moz-transition: transform .35s ease-in-out;
+   -o-transition: transform .35s ease-in-out;
+   transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}
+
+/*
+* ==========================================================
+*     MASTHEAD
+* ==========================================================
+*/
+.masthead.image-masthead {
+  background-image: url('../img/masthead-workouts.jpg');
+  background-color: #222533;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 550px;
+  color: #fff;
+}
+.masthead, .masthead * {
+  box-sizing: border-box;
+}
+
+.masthead {
+  position: relative;
+  border-bottom: 1px solid #e7edef;
+}
+
+.masthead.image-masthead .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.masthead.image-masthead .eyebrow {
+  padding-bottom: 5px;
+  padding-left: 0;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: .042em;
+  font-size: 1.25rem;
+}
+
+h1.heading {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.masthead-text p {
+  color: #fff;
+}
