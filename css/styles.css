@@ -4,10 +4,11 @@ Table Of Contents
 # BRANDING
   
   dark: #302e3b
-  grey: #7e7c87
+  grey: #7e7c87 rgb(126,124,135);
   soft orange: #dfba73
   teal: #c5dbe8
   dark cyan: #479997 
+  salmon: #c98474;
 
 # TYPOGRAPHY
   font-family: 'Raleway', sans-serif;
@@ -25,7 +26,6 @@ Table Of Contents
   --ss-dark: #302e3b;
   --ss-grey: #7e7c87;
   --ss-teal: #c5dbe8;
-  --ss-grey: #434242;
   --ss-darkcyan:#479997;
   --ss-softorange: #dfba73;
   --ss-salmon: #c98474;
@@ -51,7 +51,7 @@ body {
   background: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--ss-heading);
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: var(--ss-grey);
   /* color: #0a145a; */
@@ -64,6 +64,7 @@ p {
 }
 a:link, a:visited {
   color: var(--ss-salmon);
+  font-weight: 600;
 }
 a:hover {
   text-decoration: underline;
@@ -207,7 +208,145 @@ button.navbar-toggler {
 h1.heading {
   color: white;
   font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
 }
 .masthead-text p {
   color: #fff;
 }
+
+a.easing img {
+  width: 40px;
+  height: 40px;
+  margin-top: 110px;
+  animation-name: bounce;
+  animation: bounce 3s infinite;
+  transition: all 0.3s ease-in-out;
+  opacity: .7;
+}
+
+/*
+* ==========================================================
+*     LAYOUT
+* ==========================================================
+*/
+section {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.center_title {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.service-row {
+  padding-top: 45px;
+}
+.rounded-circle {
+  border-radius: 50%!important;
+  border: 5px solid #c5dbe8;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.media-body {
+  position: relative;
+  text-align: center;
+}
+
+.media-title {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 25px;
+  right: 0;
+  bottom: 0;
+  top: 10px;
+  transition: .5s ease;
+  background-color: rgba(201,132,116,0.8);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.media-title .text {
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+.media-title .text h2,
+.media-title .text p {
+  color: white;
+}
+
+.media-title .text p {
+  padding-top: 10px;
+  border-top: 1px solid;
+  font-style: italic;
+}
+
+.media-body:hover .media-title {
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 25px;
+  right: 0;
+  bottom: 0;
+  top: 10px;
+}
+
+/* Media Hover Hover for - Second Media Item */
+
+.variety {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 25px;
+  right: 0;
+  bottom: 0;
+  top: 10px;
+  transition: .5s ease;
+  background-color: rgba(126,124,135,0.8);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.variety .text {
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+.variety .text h2,
+.variety .text p {
+  color: white;
+}
+
+.variety .text p {
+  padding-top: 10px;
+  border-top: 1px solid;
+  font-style: italic;
+}
+
+.media-body:hover .variety {
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 25px;
+  right: 0;
+  bottom: 0;
+  top: 10px;
+}
+
+
+
