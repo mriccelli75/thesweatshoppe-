@@ -3,7 +3,7 @@ Table Of Contents
 
 # BRANDING
   
-  dark: #302e3b
+  dark: rgb(48,46,59);
   grey: #7e7c87 rgb(126,124,135);
   soft orange: #dfba73
   teal: #c5dbe8
@@ -56,7 +56,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ss-grey);
   /* color: #0a145a; */
 }
-
+.h1, h1 {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+}
 p {
   color: var(--ss-grey);
   font-size: 1rem;
@@ -231,7 +234,7 @@ a.easing img {
 */
 section {
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .center_title {
@@ -263,9 +266,9 @@ section {
   bottom: 0;
   top: 10px;
   transition: .5s ease;
-  background-color: rgba(201,132,116,0.8);
+  background-color: rgba(201,132,116,0.9);
   border-radius: 50%;
-  opacity: 0;
+  
 }
 
 .media-title .text {
@@ -290,14 +293,8 @@ section {
 }
 
 .media-body:hover .media-title {
-  opacity: 1;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  left: 25px;
-  right: 0;
-  bottom: 0;
-  top: 10px;
+  background-color: rgba(201,132,116,0.5);
+  
 }
 
 /* Media Hover Hover for - Second Media Item */
@@ -306,14 +303,14 @@ section {
   width: 300px;
   height: 300px;
   position: absolute;
-  left: 25px;
+   
   right: 0;
   bottom: 0;
   top: 10px;
   transition: .5s ease;
-  background-color: rgba(126,124,135,0.8);
+  background-color: rgba(126,124,135,0.9);
   border-radius: 50%;
-  opacity: 0;
+ 
 }
 
 .variety .text {
@@ -337,8 +334,7 @@ section {
   font-style: italic;
 }
 
-.media-body:hover .variety {
-  opacity: 1;
+.media-body .variety {
   width: 300px;
   height: 300px;
   position: absolute;
@@ -347,6 +343,101 @@ section {
   bottom: 0;
   top: 10px;
 }
+.media-body .variety:hover .media-title {
+  background-color: rgba(201,132,116,0.5);
+  
+}
 
 
+/* Media Hover Hover for - Third Media Item */
 
+.community {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+ 
+  right: 0;
+  bottom: 0;
+  top: 10px;
+  transition: .5s ease;
+  background-color: rgba(48,46,59, 0.9);
+  border-radius: 50%;
+  
+}
+
+.community  .text {
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+.community .text h2,
+.community .text p {
+  color: white;
+}
+
+.community .text p {
+  padding-top: 10px;
+  border-top: 1px solid;
+  font-style: italic;
+}
+.media-body .community:hover .media-title {
+  background-color: rgba(201,132,116,0.5);
+}
+#why-thesweatshoppe .btn-primary {
+  color: white;
+}
+
+section#workouts {
+  /* background: url('../img/athletes-endurance-energy-685534.jpg');
+  background-size: cover;
+  position: relative; */
+   
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(48,46,59, 0.9);
+
+}
+section#workouts h1,
+section#workouts p.lead {
+  color: var(--ss-grey);
+  position: relative;
+  z-index: 9;
+}
+.dotted-line {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  z-index: 9;
+}
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #fff;
+}
+.dot.dot-two {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card-body {
+  text-align: center;
+}
