@@ -392,10 +392,8 @@ section {
   color: white;
 }
 
-section#workouts {
-  /* background: url('../img/athletes-endurance-energy-685534.jpg');
-  background-size: cover;
-  position: relative; */
+section#workouts .row + .row {
+  margin-top: 35px;
    
 }
 .overlay {
@@ -441,3 +439,4 @@ section#workouts p.lead {
 .card-body {
   text-align: center;
 }
+
